@@ -1,7 +1,7 @@
 class MobiusHotlineServer < Formula
   desc "Mobius Hotline server"
   homepage "https://github.com/jhalter/mobius"
-  url "https://github.com/jhalter/mobius/archive/refs/tags/v0.0.5.tar.gz"
+  url "https://github.com/jhalter/mobius/archive/refs/tags/v0.0.8.tar.gz"
   sha256 "ef31e21f5bfc55d32e190a434413da630fb7392d87104ccbcd58adc5953bacc7"
   license "MIT"
 
@@ -11,7 +11,7 @@ class MobiusHotlineServer < Formula
     system "make", "build-server"
 
     bin.install "mobius-hotline-server"
-    var.install "server/config"
+    var.install "server/mobius"
   end
 
   test do
