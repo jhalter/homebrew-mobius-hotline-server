@@ -9,9 +9,9 @@ class MobiusHotlineServer < Formula
 
   def install
     system "make", "build-server"
-    system "make", "init-config"
 
     bin.install "mobius-hotline-server"
+    var.install "server/config"
   end
 
   test do
