@@ -11,7 +11,7 @@ class MobiusHotlineServer < Formula
     system "make", "build-darwin-amd64-server"
 
     bin.install "dist/mobius_server_darwin_amd64/mobius-hotline-server" => "mobius-hotline-server"
-    var.install "cmd/mobius-hotline-server/mobius" => "mobius"
+    var.install "cmd/mobius-hotline-server/mobius" => "mobius" if !Dir.exist? "mobius"
   end
 
   test do
