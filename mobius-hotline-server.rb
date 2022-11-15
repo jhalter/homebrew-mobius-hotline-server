@@ -1,7 +1,7 @@
 class MobiusHotlineServer < Formula
   desc "Mobius Hotline server"
   homepage "https://github.com/jhalter/mobius"
-  url "https://github.com/jhalter/mobius/archive/refs/tags/v0.8.2.tar.gz"
+  url "https://github.com/jhalter/mobius/archive/refs/tags/v0.10.7.tar.gz"
   sha256 "0414d68f13a1dc3a5ae5e89736cc0ea7fae25165105992e1efc410d567217476"
   license "MIT"
 
