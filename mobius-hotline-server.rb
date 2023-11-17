@@ -14,6 +14,11 @@ class MobiusHotlineServer < Formula
     var.install "cmd/mobius-hotline-server/mobius" => "mobius" unless Dir.exist? var/"mobius"
   end
 
+
+  service do
+    run [opt_bin/"mobius-hotline-server"]
+  end
+  
   test do
     system "true"
   end
