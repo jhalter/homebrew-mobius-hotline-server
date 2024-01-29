@@ -7,13 +7,12 @@ class MobiusHotlineServer < Formula
 
   depends_on "go" => :build
 
-  def install
-    system "make", "build-darwin-amd64-server"
+  def install    
+    system "go", "build", "./cmd/mobius-hotline-server"
 
-    bin.install "dist/mobius_server_darwin_amd64/mobius-hotline-server" => "mobius-hotline-server"
+    bin.install "mobius-hotline-server" => "mobius-hotline-server"
     var.install "cmd/mobius-hotline-server/mobius" => "mobius" unless Dir.exist? var/"mobius"
   end
-
 
   service do
     run [opt_bin/"mobius-hotline-server"]
