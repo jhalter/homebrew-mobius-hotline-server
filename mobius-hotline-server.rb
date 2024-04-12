@@ -1,8 +1,8 @@
 class MobiusHotlineServer < Formula
   desc "Mobius Hotline server"
   homepage "https://github.com/jhalter/mobius"
-  url "https://github.com/jhalter/mobius/archive/refs/tags/v0.12.0.tar.gz"
-  sha256 "db08bb2a97b2eca5d600cd5d5a1e3596415697d49edc18e1dd71ca0ae577b78b"
+  url "https://github.com/jhalter/mobius/archive/refs/tags/v0.12.1.tar.gz"
+  sha256 "645c466fb85c73c073e9e03a32809b0cadac8572299110fedcb6915067d294e4"
   license "MIT"
 
   depends_on "go" => :build
